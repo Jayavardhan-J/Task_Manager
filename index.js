@@ -43,14 +43,14 @@ const generateTaskCard = ({id, url, title, type, description}) => {
 }
 
 const saveToLocalStorage = () => {
-    localStorage.setItem("nikhiltasks", JSON.stringify({nikhil: globalTaskData}));
+    localStorage.setItem("Jaytasks", JSON.stringify({Jay: globalTaskData}));
 }
 
 const reloadTaskCard = () => {
-    const localStorageCopy = JSON.parse(localStorage.getItem("nikhiltasks"));
+    const localStorageCopy = JSON.parse(localStorage.getItem("Jaytasks"));
     console.log(localStorageCopy);
     if(localStorageCopy) {
-        globalTaskData = localStorageCopy["nikhil"];
+        globalTaskData = localStorageCopy["Jay"];
     }
     console.log(globalTaskData)
     globalTaskData.map((cardData) => {
